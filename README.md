@@ -1,5 +1,6 @@
 # 📌 Sistema de Chamados - PHP & Bootstrap
 🚀 Este projeto faz parte do curso de Desenvolvimento Web na Udemy.
+https://www.udemy.com/course/web-completo/?couponCode=2021PM25
 
 Este é um projeto simples de um **Sistema de Chamados** desenvolvido com **PHP, HTML, CSS e Bootstrap**. O objetivo é permitir que usuários registrem chamados relacionados a problemas técnicos, como falhas de hardware ou software.
 
@@ -39,4 +40,4 @@ Este é um projeto simples de um **Sistema de Chamados** desenvolvido com **PHP,
 - O login é realizado sem banco de dados, os usuários estão cadastrados manualmente no código.
 - O projeto pode ser facilmente expandido para incluir um banco de dados no futuro.
 
-💻 **Desenvolvido por [Seu Nome](https://github.com/johnathanTeles)**
+💻 **Desenvolvido por https://github.com/johnathanTeles**
