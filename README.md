@@ -39,4 +39,4 @@ Este é um projeto simples de um **Sistema de Chamados** desenvolvido com **PHP,
 - O login é realizado sem banco de dados, os usuários estão cadastrados manualmente no código.
 - O projeto pode ser facilmente expandido para incluir um banco de dados no futuro.
 
-💻 **Desenvolvido por [Seu Nome](https://github.com/johnathanTeles)**
+💻 **Desenvolvido por (https://github.com/johnathanTeles)**
