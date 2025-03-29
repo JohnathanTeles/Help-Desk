@@ -4,17 +4,14 @@ require_once "validador_acesso.php";
 ?>
 
 <?php
-
+  
   //array de chamados
-
   $chamados = array();
-  //http://php.net/manual/pt_BR/function.fopen.php
-  //abrir arquivo.hd
+
   $arquivo = fopen('arquivo.hd','r');
 
   //enquato houverem registros (linhas) a serem recuperados
   while(!feof($arquivo)){ //testa pelo fim do arquivo
-    //linhas
     $registro = fgets($arquivo);//recupera a linha
     $chamados[] = $registro;
   }
@@ -71,15 +68,22 @@ require_once "validador_acesso.php";
               <?php
                 $chamado_dados = explode('#', $chamado);
 
+
+                if ($_SESSION['perfil_id'] == 2) {
+                  if ($_SESSION['id'] != $chamado_dados[0]) {
+                    continue;
+                  }
+                }
+
                 if(count($chamado_dados) < 3){
                   continue;
                 }
               ?>
               <div class="card mb-3 bg-light">
                 <div class="card-body">
-                  <h5 class="card-title"><?= $chamado_dados[0]?></h5>
-                  <h6 class="card-subtitle mb-2 text-muted"><?= $chamado_dados[1]?></h6>
-                  <p class="card-text"><?= $chamado_dados[2]?></p>
+                  <h5 class="card-title"><?= $chamado_dados[1]?></h5>
+                  <h6 class="card-subtitle mb-2 text-muted"><?= $chamado_dados[2]?></h6>
+                  <p class="card-text"><?= $chamado_dados[3]?></p>
 
                 </div>
               </div>
